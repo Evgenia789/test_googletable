@@ -6,6 +6,8 @@ class Constants:
     """
     A dataclass representing the constants.
     """
-    column_number_from = 3
-    column_name = "стоимость,rub"
-    column_number_to = 5
+    scopes = (
+                'https://www.googleapis.com/auth/spreadsheets',
+                'https://www.googleapis.com/auth/drive'
+            )
+    credentials_file_path = 'service_account.json'
